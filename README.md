@@ -35,7 +35,7 @@ Init the lib. `zstbi.init()` is cheap and you may call it whenever you need to c
 ```zig
 const zstbi = @import("zstbi");
 
-zstbi.init(allocator);
+zstbi.init(allocator, io);
 defer zstbi.deinit();
 ```
 ```zig
